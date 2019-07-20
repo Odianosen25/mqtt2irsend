@@ -11,11 +11,13 @@ $ sudo apt-get update
 $ sudo apt-get install python3-pip
 $ sudo apt-get install python3-venv
 
-$ git clone https://github.com/Odianosen25/mqtt2irsend.git
-
 $ python3 -m venv mqtt2irsend
+$ cd mqtt2irsend
+$ git clone https://github.com/Odianosen25/mqtt2irsend.git
+$ cd
 $ source mqtt2irsend/bin/activate
 
+$ cd mqtt2irsend
 $ pip3 install -r requirements.txt
 ```
 

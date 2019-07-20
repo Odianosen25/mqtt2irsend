@@ -70,3 +70,5 @@ class IRApp(mqtt.Mqtt):
 ```
 
 To send multiple IR codes at once, within the same remote, `codes` could be a list of the codes
+
+If running this script on a Pi running a Kodi instance, ensure the remote is activated via the Kodi instance.

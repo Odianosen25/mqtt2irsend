@@ -27,6 +27,10 @@ $ cd mqtt2irsend/mqtt2irsend
 
 /mqtt2irsend/mqtt2irsend$ sudo cp mqtt2irsend.service /etc/systemd/system/mqtt2irsend.service
 
+#modify "my-remote.conf" and add your own Lirc codes
+
+/mqtt2irsend/mqtt2irsend$ sudo cp mqtt2irsend.service /etc/systemd/system/mqtt2irsend.service
+
 #modify the service file and needed with right parameters if needed
 
 $ sudo systemctl daemon-reload
@@ -34,7 +38,7 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl enable mqtt2irsend.service
 ```
 
-Modify the `mqtt2irsendconfig.yaml` file, as that is used to connect to the MQTT broker.
+Modify the `mqtt2irsendconfig.yaml` file, as that is used to connect to the MQTT broker. 
 
 In the config file, the `DEVICE` should be set to the device used to control the `lirc` interface in Kodi.
 

@@ -49,3 +49,5 @@ class IRApp(mqtt.Mqtt):
       data = {"command" : "send_once", "remote" : "LG_TV", "codes" : "POWER_ON"}
       self.mqtt_publish("ir/kodi/remote/living_room", json.dumps(data))
 ```
+
+To send multiple IR codes at once, within the same remote, `codes` could be a list of the codes

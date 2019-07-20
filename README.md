@@ -29,7 +29,7 @@ $ cd mqtt2irsend/mqtt2irsend
 
 #modify "my-remote.conf" and add your own Lirc codes
 
-/mqtt2irsend/mqtt2irsend$ sudo cp mqtt2irsend.service /etc/systemd/system/mqtt2irsend.service
+/mqtt2irsend/mqtt2irsend$ sudo cp my-remote.conf /etc/lirc/my-remote.conf
 
 #modify the service file and needed with right parameters if needed
 

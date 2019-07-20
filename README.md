@@ -2,7 +2,7 @@
 This is a simple code written to run on the same Pi running Kodi. 
 It is intended to be used as a MQTT to IR controller, making use of a Raspberry Pi.
 I have always wanted to use a single Pi to do several things, so instead of having a standalone IR device, 
-the same Pi can be used for IR control of IR devices.
+the same Pi can be used for IR control of IR devices. For this system, I make use of the OSMC Kodi instance
 
 To install the system, run the following code
 

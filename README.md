@@ -13,12 +13,25 @@ $ sudo apt-get install python3-venv
 
 $ python3 -m venv mqtt2irsend
 $ cd mqtt2irsend
-$ git clone https://github.com/Odianosen25/mqtt2irsend.git
-$ cd
+/mqtt2irsend$ git clone https://github.com/Odianosen25/mqtt2irsend.git
+/mqtt2irsend$ cd
 $ source mqtt2irsend/bin/activate
 
-$ cd mqtt2irsend
-$ pip3 install -r requirements.txt
+$ cd mqtt2irsend/mqtt2irsend
+/mqtt2irsend/mqtt2irsend$ pip3 install -r requirements.txt
+/mqtt2irsend/mqtt2irsend$ nano mqtt2irsendconfig.yaml
+
+<modify "mqtt2irsendconfig.yaml" with right parameters>
+
+/mqtt2irsend/mqtt2irsend$ deactivate
+
+/mqtt2irsend/mqtt2irsend$ sudo cp mqtt2irsend.service /etc/systemd/system/mqtt2irsend.service
+
+<modify the service file and needed with right parameters if needed>
+
+$ sudo systemctl daemon-reload
+
+$ sudo systemctl enable mqtt2irsend.service
 ```
 
 Modify the `mqtt2irsendconfig.yaml` file, as that is used to connect to the MQTT broker.

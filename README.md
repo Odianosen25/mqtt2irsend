@@ -21,13 +21,13 @@ $ cd mqtt2irsend/mqtt2irsend
 /mqtt2irsend/mqtt2irsend$ pip3 install -r requirements.txt
 /mqtt2irsend/mqtt2irsend$ nano mqtt2irsendconfig.yaml
 
-<modify "mqtt2irsendconfig.yaml" with right parameters>
+#modify "mqtt2irsendconfig.yaml" with right parameters
 
 /mqtt2irsend/mqtt2irsend$ deactivate
 
 /mqtt2irsend/mqtt2irsend$ sudo cp mqtt2irsend.service /etc/systemd/system/mqtt2irsend.service
 
-<modify the service file and needed with right parameters if needed>
+#modify the service file and needed with right parameters if needed
 
 $ sudo systemctl daemon-reload
 

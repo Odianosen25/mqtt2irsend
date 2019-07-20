@@ -1,0 +1,5 @@
+#requirements for mqtt2irsend
+
+py_irsend
+paho-mqtt
+pyyaml==5.1

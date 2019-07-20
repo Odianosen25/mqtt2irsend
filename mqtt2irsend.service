@@ -1,0 +1,11 @@
+[Unit]
+Description=Mqtt2Irsend for Kodi
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/home/osmc/mqtt2irsend/mqtt2irsend/bin/python3 /home/osmc/mqtt2irsend/mqtt2irsend.py
+
+[Install]
+WantedBy=multi-user.target

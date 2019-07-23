@@ -123,8 +123,5 @@ CA_CERT = config.get('MQTT_CA_CERT', "")
 if USERNAME and PASSWORD:
     client.username_pw_set(username=USERNAME, password=PASSWORD)
 
-client.connect_async(BROKER, PORT, 60)
-client.loop_start()
-
-#client.connect(BROKER, PORT, 60)
-#client.loop_forever()
+client.connect(BROKER, PORT, 60)
+client.loop_forever()

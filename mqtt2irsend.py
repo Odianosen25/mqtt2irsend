@@ -6,6 +6,7 @@ import json
 import sys
 import os
 import yaml
+import time
 
 """
 Parse and load the configuration file to get MQTT credentials
@@ -123,5 +124,11 @@ CA_CERT = config.get('MQTT_CA_CERT', "")
 if USERNAME and PASSWORD:
     client.username_pw_set(username=USERNAME, password=PASSWORD)
 
-client.connect(BROKER, PORT, 60)
-client.loop_forever()
+while True:
+    try:
+        client.connect(BROKER, PORT, 60)
+        client.loop_start()
+        break
+    except:
+        print("There was an error while attempting to connect to broker")
+        time.sleep(10)

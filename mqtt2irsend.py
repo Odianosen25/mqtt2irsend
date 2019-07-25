@@ -127,7 +127,7 @@ if USERNAME and PASSWORD:
 while True:
     try:
         client.connect(BROKER, PORT, 60)
-        client.loop_start()
+        client.loop_forever()
         break
     except:
         print("There was an error while attempting to connect to broker")
